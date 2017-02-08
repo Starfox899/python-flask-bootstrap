@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+{% import "navbar.html" as nav %}
+{% block navbar %}
+    {{ nav }}
+{% endblock navbar %}
+
+{% block content %}
+<div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 panel panel-default">
+
+                <h1 class="margin-base-vertical">UI-Prototype</h1>
+
+                <p>
+                Dies ist ein User Interface (UI) Prototype. 
+                Ziel ist es eine standalone-Applikation bereit zu stellen, 
+                die vom Flugpersonal lokal und remote genutzt werden kann.
+                Die Nutzung soll über stationäre und mobile Geräte erfolgen.
+                </p>
+                <p>
+                Das klappt über ein Smartphone oder einen Rechner mit Windows, OS X oder Linux. 
+                </p>
+
+                <form class="margin-base-vertical">
+                    <p class="input-group">Learn more?
+                        <span class="input-group-addon"><span class="icon-envelope"></span></span>
+                        <input type="text" class="form-control input-lg" name="email" placeholder="sascha.herrmann.consulting@gmail.com" />
+                    </p>
+                    <p class="text-center">
+                        <button type="submit" class="btn btn-success btn-lg">Funktionsloser Button</button>
+                    </p>
+                    </span>
+                </form>
+
+
+            </div><!-- //main content -->
+        </div><!-- //row -->
+    </div> <!-- //container -->
+{% endblock %}
